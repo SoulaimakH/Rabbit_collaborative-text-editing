@@ -69,7 +69,7 @@
 		
 		.flex-box {
 			display: flex;
-			justify-content: center;
+			
 		}
 		
 	</style>
@@ -167,13 +167,12 @@
 			<div class="col-md-6 col-sm-9">
 				<div class="flex-box">
 					
-					<textarea id="textarea1" autofocus
+					<textarea id="textarea1" autofocus(0)
 							class="input shadow"
 							name="name"
 							rows="15"
 							cols="100"
-							placeholder="Your text here " onkeypress="myKeyPress(event)">
-					</textarea>
+							placeholder="Your text here " onkeydown="myKeyPress(event)"></textarea>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -265,13 +264,14 @@
 			</div>
 			<div class="col-md-6 col-sm-9">
 				<div class="flex-box">
-					<textarea id="textarea2" autofocus 
+					<textarea id="textarea2"
+					defaultlength="0"
 							class="input shadow"
 							name="name"
 							rows="15"
 							cols="100"
-							placeholder="Your text here ">
-					</textarea>
+							placeholder="Your text here "  onkeydown="myKeyPress2(event)"></textarea>
+					
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -363,13 +363,12 @@
 			</div>
 			<div class="col-md-6 col-sm-9">
 				<div class="flex-box">
-					<textarea id="textarea1"
+					<textarea id="textarea3"
 							class="input shadow"
 							name="name"
 							rows="15"
 							cols="100"
-							placeholder="Your text here ">
-					</textarea>
+							placeholder="Your text here "  onkeydown="myKeyPress3(event)"></textarea>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -385,6 +384,20 @@
 	<!--External JavaScript file-->
 
 	<script src="home.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+/*	const textArea = document.getElementById('textarea2');
+	const textArea1 = document.getElementById('textarea1');
+
+
+textArea1.addEventListener('keyup', function () {
+ textArea.value = '';
+ textArea.value = 'Hello world';
+});*/
+
+
+</script>
 	
 </body>
 

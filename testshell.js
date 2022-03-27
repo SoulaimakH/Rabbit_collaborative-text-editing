@@ -35,7 +35,7 @@ const app = express()
 
 app.get('', (req,res) => {
     console.log(req.query.key);
-    exec("node emit_log_direct.js A " + req.query.key+"pos"+req.query.pos);
+    exec("node emit_log_direct.js A " + req.query.key);
     res.send("Liste des parkings")
 })
 
