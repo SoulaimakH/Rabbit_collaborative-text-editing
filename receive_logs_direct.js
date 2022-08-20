@@ -48,7 +48,7 @@ amqp.connect('amqp://localhost', function(error0, connection) {
           console.log(error);
         })
 
-       /* axios.post("http://localhost:3000", {
+       /*axios.post("http://localhost:3001/k", {
           key: 'key='+msg.fields.routingKey
         })
         .then(function (response) {
@@ -56,8 +56,8 @@ amqp.connect('amqp://localhost', function(error0, connection) {
         })
         .catch(function (error) {
           console.log(error);
-        });
-*/
+        });*/
+
 
        /*var objReq = new XMLHttpRequest();
         objReq.open("GET", "http://localhost:3000/reciva" + "?key=" + msg.fields.routingKey+"?pos="+msg.content.toString(), false);

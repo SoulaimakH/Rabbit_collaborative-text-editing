@@ -351,10 +351,14 @@ function load( ) {
   xhr.send('');
 }
 function load2( ) {
-	
-		
+	/*
+	var oReq = new XMLHttpRequest();
+	oReq.addEventListener("load", reqListener);
+	console.log(this.responseText);
+	oReq.open("GET", "http://localhost:3000");
+	oReq.send();*/
 			var request = new XMLHttpRequest();
-		
+			//request.addEventListener("load", reqListener);
 			request.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status == 200) {
 					X=this.responseText;
